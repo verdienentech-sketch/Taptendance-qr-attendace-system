@@ -1,0 +1,67 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --primary-color: #3498db;
+  --table-bg: white;
+  --table-alt: #f2f2f2;
+  --header-color: #2c3e50;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --primary-color: #2980b9;
+  --table-bg: #2c2c2c;
+  --table-alt: #3a3a3a;
+  --header-color: #ecf0f1;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: var(--header-color);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#reader {
+  margin: 1rem auto;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--table-bg);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: var(--table-alt);
+}
